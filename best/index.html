@@ -206,15 +206,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-coverage-and-testing" class="md-nav__link">
-    Code coverage and testing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-integration" class="md-nav__link">
-    Code integration
+  <a href="#code-coverage-testing-continuous-integration" class="md-nav__link">
+    Code coverage, testing, continuous integration
   </a>
   
 </li>
@@ -241,8 +234,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markdown-style-coding" class="md-nav__link">
-    Markdown-style coding
+  <a href="#documents-with-live-code" class="md-nav__link">
+    Documents with live code
   </a>
   
 </li>
@@ -271,13 +264,6 @@
         <li class="md-nav__item">
   <a href="#packaging-a-coding-project" class="md-nav__link">
     Packaging a coding project
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#software-design" class="md-nav__link">
-    Software design
   </a>
   
 </li>
@@ -380,15 +366,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-coverage-and-testing" class="md-nav__link">
-    Code coverage and testing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-integration" class="md-nav__link">
-    Code integration
+  <a href="#code-coverage-testing-continuous-integration" class="md-nav__link">
+    Code coverage, testing, continuous integration
   </a>
   
 </li>
@@ -415,8 +394,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markdown-style-coding" class="md-nav__link">
-    Markdown-style coding
+  <a href="#documents-with-live-code" class="md-nav__link">
+    Documents with live code
   </a>
   
 </li>
@@ -450,13 +429,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#software-design" class="md-nav__link">
-    Software design
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#version-control" class="md-nav__link">
     Version control
   </a>
@@ -478,26 +450,52 @@
                 
                 <h1 id="best-practices-for-hpc">Best practices for HPC</h1>
 <p>This page lists some useful best practices to keep in mind when coding and running applications and pipelines on an HPC.</p>
-<h2 id="code-coverage-and-testing">Code coverage and testing</h2>
-<p>Every time we code, testing is a concern and is usually performed by the coder(s) at some point during the project. However, this is not always the best solution, as a project can scale to be quite large and complex, with a lot of things to test. It is a good practice to implement simple but representative tests that cover all the code, so that bugs can be spotted automatically before the final users do that.
+<h2 id="code-coverage-testing-continuous-integration">Code coverage, testing, continuous integration</h2>
+<p>Every time we code, testing is a concern and is usually performed by the coder(s) regularly during the project. One can identify some basic main types of test:</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Regression test</label><div class="tabbed-content">
+<p><em>Given an expected output from a specific input, the code is tested to reproduce that same output.</em></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Unit test</label><div class="tabbed-content">
+<p><em>Tests the smallest units of the software (e.g. single functions) to identify bugs, especially in extreme cases of inputs and outputs</em></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Continuous integration</label><div class="tabbed-content">
+<p><em>A set of tests for the software runs automatically everytime the software code is updated. This is useful to spot bugs before someone even uses the code.</em></p>
+</div>
+</div>
+<p>More things one might need to test are the performance/scalability of the code, usability, response to all the intended types of input data.</p>
+<p>Unit and regression test can be useful, but at some point not really feasible, since the code can scale to be quite large and complex, with a lot of things to control. 
+It is thus a good practice to use continuous integration, and implement simple but representative tests that cover all the code, so that bugs can be spotted often before the final users do that.
 Code coverage tools to implement such tests exists for several programming languages, and also for testing code deployed on Github version control.</p>
-<h2 id="code-integration">Code integration</h2>
+<details class="links"><summary>Links</summary><p><a href="https://pytest.org/">pyTest</a>, a package to test <code>python</code> code</p>
+<p><a href="https://cmake.org/Wiki/CMake/Testing_With_CTest">Cmake</a> to test both C, C++ and Fortran code</p>
+<p><a href="https://www.travis-ci.com/">Travis CI</a> tool for continuous integration in most of the used programming languages. Works on Git version control.</p>
+<p><a href="https://github.com/r-lib/covr">covr</a>, test coverage reports for R</p>
+</details>
 <h2 id="code-styling">Code styling</h2>
 <h2 id="containerized-applications">Containerized applications</h2>
 <p>Docker, Singularity</p>
 <h2 id="documentation">Documentation</h2>
-<h2 id="markdown-style-coding">Markdown-style coding</h2>
+<p>When creating a piece of software, it is always a good idea to create a documentation explaining the usage of each element of the code. For packages, there are softwares that create automatically a documentation by using functions´ declarations and eventually some text included into them as a string. </p>
+<h2 id="documents-with-live-code">Documents with live code</h2>
+<p>Programming languages like <code>python</code> and <code>R</code> allows users to write documents that contain text, images and equations together with executable code and its output. Text is usually written using the very immediate markdown <code>language</code>. Markdown files for <code>R</code> can be created in the GUI <code>Rstudio</code>, while <code>python</code> uses <code>jupyter notebooks</code>.</p>
+<details class="links"><summary>Links</summary><p><a href="https://rmarkdown.rstudio.com/articles_intro.html">Introduction to Markdown</a> for <code>R</code> in <code>Rstudio</code>.</p>
+<p><a href="https://jupyter.org/">Jupyter notebooks</a> to create interactive code with <code>python</code>. You can write <code>R</code> code in a jupyter notebook by using the <code>python</code> package <a href="https://rpy2.github.io/doc/latest/html/index.html">rpy2</a>.</p>
+</details>
 <h2 id="packageenvironment-management-systems">Package/Environment management systems</h2>
-<p>When coding, it is essential that all the project is developed under specific software conditions, i.e. the packages and libraries used during development (dependencies) should not change along the project's lifetime, so that variations in things such as output formats, new algorithmic implementations will not create conflicts difficult to trace back under development.</p>
+<p>When coding, it is essential that all the projects are developed under specific software conditions, i.e. the packages and libraries used during development (dependencies) should not change along the project's lifetime, so that variations in things such as output formats and new algorithmic implementations will not create conflicts difficult to trace back under development. An environment and package manager makes the user able to create a protected framework where to install specific packages that will not influence other softwares outside the specific environment in use.</p>
+<p><a href="https://docs.conda.io/en/latest/">Conda</a> is an easy to use and very popular environment manager.</p>
 <h2 id="many-short-jobs-running">Many short jobs running</h2>
 <p>Everytime a job is submitted to the job manager (e.g. SLURM) of a computing cluster, there is an overhead time necessary to elaborate resource provision, preparation for output, and queue organization. Therefore it is wise to create, when possible, longer jobs. One needs to find the correct balance for how to organizing jobs: if these are too long and fail because of some issue, than a lot of time and resources have been wasted, but such problem can be overcome by tracking the outputs of each step to avoid rerunning all computations. For example, at each step of a job outputting something relevant, there can be a condition checking if the specific output is already present.</p>
 <h2 id="massive-stdout-outputs">Massive STDOUT outputs</h2>
 <p>Try to avoid printing many outputs on the standard output STDOUT. This can be problematic when a lot of parallel jobs are running, letting STDOUT filling all the home directory up, and causing errors and eventual data loss. Use instead an output in software-specific data structures (such as <code>.RData</code> files for the <code>R</code> language) or at least simple text files.</p>
 <h2 id="packaging-a-coding-project">Packaging a coding project</h2>
 <p>When coding a piece of software in which there are multiple newly implemented function, it can be smart to organize all those functions as a package, that can be reused and eventually shared with ease. Such a practice is especially easy and can be mastered very quickly for coding projects in <code>python</code> and <code>R</code>.</p>
-<h2 id="software-design">Software design</h2>
+<p><a href="https://packaging.python.org/tutorials/packaging-projects/">pyPA</a> <code>python</code> packaging user guide</p>
+<p><a href="https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio">R package development</a> using <code>Rstudio</code></p>
 <h2 id="version-control">Version control</h2>
 <p>Version control is the tracking of your development history for a project. This allows multiple people working on the same material to keep changes in sync without stepping over each other's contributions. Version control tools allow to commit changes with a description, set up and assign project objectives, open software issues from users and contributors, test automatically the code to find bugs before users step into them. Version control is useful for both teams and single users, and it is a good practice to have version control as a standard for any project.</p>
+<p><a href="github.com">GitHub</a> is the most used tool for version control. <a href="https://lab.github.com/githubtraining/introduction-to-github">Here</a> is a quick introduction to get started on Github for new users.</p>
+<p>Alternatives to Github are <a href="https://about.gitlab.com/">GitLab</a> and <a href="https://bitbucket.org/">BitBucket</a>.</p>
                 
               
               
@@ -510,14 +508,14 @@ Code coverage tools to implement such tests exists for several programming langu
         </div>
       </main>
       
-<p style="text-align:center;"><img src="./overrides/partials/DeiC.png" 
+<p style="text-align:center;"><img src="https://www.deic.dk/sites/default/files/uploads/image/DeiC%20logo%20FINAL%20CMYK.png" 
     alt="DeiC logo"
     style="float:above left;width:100px;">
 
   
     This documentation is part of the EuroHPC Competence Center in Denmark, managed by DeiC.dk.
    
-    <img src="./overrides/partials/EuroCC.jpg" 
+    <img src="https://media.enccs.se/2021/01/EuroCC-Logo_free.png" 
     alt="EuroCC logo"
     style="float:above right;width:50px;">
 </p>
