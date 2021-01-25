@@ -269,6 +269,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#pipelining-and-submitting-jobs-in-slurm" class="md-nav__link">
+    Pipelining and submitting jobs in SLURM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-control" class="md-nav__link">
     Version control
   </a>
@@ -429,6 +436,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#pipelining-and-submitting-jobs-in-slurm" class="md-nav__link">
+    Pipelining and submitting jobs in SLURM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-control" class="md-nav__link">
     Version control
   </a>
@@ -466,36 +480,268 @@
 <p>Unit and regression test can be useful, but at some point not really feasible, since the code can scale to be quite large and complex, with a lot of things to control. 
 It is thus a good practice to use continuous integration, and implement simple but representative tests that cover all the code, so that bugs can be spotted often before the final users do that.
 Code coverage tools to implement such tests exists for several programming languages, and also for testing code deployed on Github version control.</p>
-<details class="links"><summary>Links</summary><p><a href="https://pytest.org/">pyTest</a>, a package to test <code>python</code> code</p>
-<p><a href="https://cmake.org/Wiki/CMake/Testing_With_CTest">Cmake</a> to test both C, C++ and Fortran code</p>
-<p><a href="https://www.travis-ci.com/">Travis CI</a> tool for continuous integration in most of the used programming languages. Works on Git version control.</p>
-<p><a href="https://github.com/r-lib/covr">covr</a>, test coverage reports for R</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://pytest.org/">pyTest</a></td>
+<td align="left">a package to test <code>python</code> code</td>
+</tr>
+<tr>
+<td align="left"><a href="https://cmake.org/Wiki/CMake/Testing_With_CTest">Cmake</a></td>
+<td align="left">to test both <code>C</code>, <code>C++</code> and <code>Fortran code</code></td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.travis-ci.com/">Travis CI</a></td>
+<td align="left">tool for continuous integration in most of the used programming languages. Works on Git version control.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/r-lib/covr">covr</a></td>
+<td align="left">test coverage reports for R</td>
+</tr>
+</tbody>
+</table>
 </details>
 <h2 id="code-styling">Code styling</h2>
+<p>An important feature of a computer code is that it is understandable by other people reading it. To make this happen, a clean and coherent style of coding should be used in a project. Some languages have a preferred coding style, and in some GUI those styling rules can be set to be required. One can also use its own coding style, but it should be one easily readable by others, and it should be the same style over the whole project.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://google.github.io/styleguide/">styleguide</a></td>
+<td align="left">Google guide for coding styles of the major programming languages</td>
+</tr>
+<tr>
+<td align="left"><a href="https://kristories.gitbook.io/awesome-guidelines/">awesome guidelines</a></td>
+<td align="left">A guide to coding styles covering also documentations, tools and development environments</td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.python-guide.org/writing/style/">Pythonic rules</a></td>
+<td align="left">Intoduction to coding style in python.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.r-bloggers.com/2019/01/%F0%9F%96%8A-r-coding-style-guide/">R style</a></td>
+<td align="left">A post on R coding style</td>
+</tr>
+</tbody>
+</table>
+</details>
 <h2 id="containerized-applications">Containerized applications</h2>
-<p>Docker, Singularity</p>
+<p>In this page we show the benefits of project and package managers, that are a way of organizing packages in separated environments. However, a higher degree of isolation than environments can be achieved by containerization. By containerizing, a user can virtualize the entire operating system, and make it ready to be deployed on any other machine. One can for example deploy a container without the need of installing anything on the hosting machine! Note that containers are a different concept from Virtual Machines, where it is the hardware being instead virtualized. </p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.docker.com/why-docker">Docker</a></td>
+<td align="left">An open source widespread container that is popular both in research and industry</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=fqMOX6JJhGo">Docker course</a></td>
+<td align="left">A course to use Docker, freely hosted on youtube</td>
+</tr>
+<tr>
+<td align="left"><a href="https://docker-curriculum.com/">Docker curriculum</a></td>
+<td align="left">Beginner introduction to docker</td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.docker.com/get-started/">Docker basics</a></td>
+<td align="left">Intoduction tutorials to Docker from the official documentation page</td>
+</tr>
+<tr>
+<td align="left"><a href="https://sylabs.io/">Singularity</a></td>
+<td align="left">Singularity is another containerization tool. It allows you to decide at which degree a container interacts with the hosting system</td>
+</tr>
+<tr>
+<td align="left"><a href="https://singularity-tutorial.github.io/">Singularity tutorial</a></td>
+<td align="left">A well done Singularity tutorial for HPC users</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=Gowh5pfzOAM">Singularity video tutorial</a></td>
+<td align="left">A video tutorial on Singularity</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=DA87Ba2dpNM">Reproducibility by containerization</a></td>
+<td align="left">A video on reproducibility with Singularity containers</td>
+</tr>
+</tbody>
+</table>
+</details>
 <h2 id="documentation">Documentation</h2>
 <p>When creating a piece of software, it is always a good idea to create a documentation explaining the usage of each element of the code. For packages, there are softwares that create automatically a documentation by using functions´ declarations and eventually some text included into them as a string. </p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.mkdocs.org/">MkDocs</a></td>
+<td align="left">A generator for static webpages, with design and themes targeted to documentation pages, but also other type of websites. This website is itself made with MkDocs.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/pawamoy/mkdocstrings">mkdocstrings</a></td>
+<td align="left">Python handler to automatically generate documentation with MkDocs</td>
+</tr>
+<tr>
+<td align="left"><a href="https://pdoc3.github.io/pdoc/">pdoc3</a></td>
+<td align="left">A package who creates automatically the documentation for your coding projects. It is semi automatic (infers your dependencies, classes, ... but adds a description based on your docstrings)</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.scivision.dev/pdoc-python-quickstart/">pdoc3 101</a></td>
+<td align="left">How to run pdoc to create an html documentation</td>
+</tr>
+<tr>
+<td align="left"><a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html">Roxygen2</a></td>
+<td align="left">A package to generate <code>R</code> documentation - it can be used also with <code>Rcpp</code></td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.sphinx-doc.org/en/master/">Sphinx</a></td>
+<td align="left">Another tool to write documentation - it produces also printable outputs. <code>Sphinx</code> was first created to write the <code>python</code> language documentation. Even though it is a tool especially thought for <code>python</code> code, it can be used to generate static webpages for other projects.</td>
+</tr>
+</tbody>
+</table>
+</details>
 <h2 id="documents-with-live-code">Documents with live code</h2>
 <p>Programming languages like <code>python</code> and <code>R</code> allows users to write documents that contain text, images and equations together with executable code and its output. Text is usually written using the very immediate markdown <code>language</code>. Markdown files for <code>R</code> can be created in the GUI <code>Rstudio</code>, while <code>python</code> uses <code>jupyter notebooks</code>.</p>
-<details class="links"><summary>Links</summary><p><a href="https://rmarkdown.rstudio.com/articles_intro.html">Introduction to Markdown</a> for <code>R</code> in <code>Rstudio</code>.</p>
-<p><a href="https://jupyter.org/">Jupyter notebooks</a> to create interactive code with <code>python</code>. You can write <code>R</code> code in a jupyter notebook by using the <code>python</code> package <a href="https://rpy2.github.io/doc/latest/html/index.html">rpy2</a>.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://rmarkdown.rstudio.com/articles_intro.html">Introduction to Markdown</a></td>
+<td align="left">Markdown for <code>R</code> in <code>Rstudio</code></td>
+</tr>
+<tr>
+<td align="left"><a href="https://jupyter.org/">Jupyter notebooks</a></td>
+<td align="left">create interactive code with <code>python</code>. You can write <code>R</code> code in a jupyter notebook by using the <code>python</code> package <a href="https://rpy2.github.io/doc/latest/html/index.html">rpy2</a></td>
+</tr>
+</tbody>
+</table>
 </details>
 <h2 id="packageenvironment-management-systems">Package/Environment management systems</h2>
-<p>When coding, it is essential that all the projects are developed under specific software conditions, i.e. the packages and libraries used during development (dependencies) should not change along the project's lifetime, so that variations in things such as output formats and new algorithmic implementations will not create conflicts difficult to trace back under development. An environment and package manager makes the user able to create a protected framework where to install specific packages that will not influence other softwares outside the specific environment in use.</p>
-<p><a href="https://docs.conda.io/en/latest/">Conda</a> is an easy to use and very popular environment manager.</p>
+<p>When coding, it is essential that all the projects are developed under specific software conditions, i.e. the packages and libraries used during development (dependencies) should not change along the project's lifetime, so that variations in things such as output formats and new algorithmic implementations will not create conflicts difficult to trace back under development. An environment and package manager makes the user able to create separated frameworks (environments) where to install specific packages that will not influence other softwares outside the environment in use. A higher degree of isolation can be achieved through containers (see the related voice in this page).</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://docs.conda.io/en/latest/">Conda</a></td>
+<td align="left">an easy to use and very popular environment manager</td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html">Getting started with conda</a></td>
+<td align="left">Introduction to <code>conda</code> setup and usage from the official documentation</td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html">Conda cheat sheet</a></td>
+<td align="left">Quick reference for <code>conda</code> usage</td>
+</tr>
+<tr>
+<td align="left"><a href="https://yarnpkg.com/">YARN</a></td>
+<td align="left">An alternative to <code>conda</code></td>
+</tr>
+</tbody>
+</table>
+</details>
 <h2 id="many-short-jobs-running">Many short jobs running</h2>
 <p>Everytime a job is submitted to the job manager (e.g. SLURM) of a computing cluster, there is an overhead time necessary to elaborate resource provision, preparation for output, and queue organization. Therefore it is wise to create, when possible, longer jobs. One needs to find the correct balance for how to organizing jobs: if these are too long and fail because of some issue, than a lot of time and resources have been wasted, but such problem can be overcome by tracking the outputs of each step to avoid rerunning all computations. For example, at each step of a job outputting something relevant, there can be a condition checking if the specific output is already present.</p>
 <h2 id="massive-stdout-outputs">Massive STDOUT outputs</h2>
 <p>Try to avoid printing many outputs on the standard output STDOUT. This can be problematic when a lot of parallel jobs are running, letting STDOUT filling all the home directory up, and causing errors and eventual data loss. Use instead an output in software-specific data structures (such as <code>.RData</code> files for the <code>R</code> language) or at least simple text files.</p>
 <h2 id="packaging-a-coding-project">Packaging a coding project</h2>
 <p>When coding a piece of software in which there are multiple newly implemented function, it can be smart to organize all those functions as a package, that can be reused and eventually shared with ease. Such a practice is especially easy and can be mastered very quickly for coding projects in <code>python</code> and <code>R</code>.</p>
-<p><a href="https://packaging.python.org/tutorials/packaging-projects/">pyPA</a> <code>python</code> packaging user guide</p>
-<p><a href="https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio">R package development</a> using <code>Rstudio</code></p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://packaging.python.org/tutorials/packaging-projects/">pyPA</a></td>
+<td align="left"><code>python</code> packaging user guide</td>
+</tr>
+<tr>
+<td align="left"><a href="https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio">R package development</a></td>
+<td align="left">Develop an <code>R</code> package using <code>Rstudio</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="pipelining-and-submitting-jobs-in-slurm">Pipelining and submitting jobs in SLURM</h2>
+<p><a href="https://slurm.schedmd.com/">SLURM</a> is a job scheduler. It allows a user to specify a series of commands and resources requirements to run such commands. Slurm does consider the job submission on an HPC system together with all the other jobs, and prioritize them according to the resources requirement and the available computational power.</p>
+<p><img alt="slurm_priority" src="../img/slurm_priority.png" title="SLURM priority based on time requested" /></p>
+<p>In figure above, the priority assigned to a SLURM job when the requested time increases, by keeping the memory and CPUs fixed. Decreased priority has higher values. Adapted from <em>A    Slurm   Simulator: Implementation   and Parametric Analysis. Simakov et al 2017.</em></p>
+<p>The danish national HPCs, and most of the other EuroHPC supercomputers, use Slurm as job manager. </p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://genome.au.dk/docs/interacting-with-the-queue/">SLURM example 1</a> and <a href="https://researchcomputing.princeton.edu/slurm">SLURM example 2</a></td>
+<td align="left">Some examples of how to make a Slurm script to submit a job from the danish HPC GenomeDK and from Princeton Research Computing.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://gwf.app/">Gwf, a simple python tool to create interdependent job submissions</a></td>
+<td align="left">Gwf, developed at the University of Aarhus, makes it easy to create Slurm jobs and organize them as a pipeline with dependencies, using the python language (you need python 3.5+). You get to simply create the shell scripts and the dependencies, without the complicating syntax of Slurm. The page contains also a useful guide.</td>
+</tr>
+</tbody>
+</table>
+</details>
 <h2 id="version-control">Version control</h2>
 <p>Version control is the tracking of your development history for a project. This allows multiple people working on the same material to keep changes in sync without stepping over each other's contributions. Version control tools allow to commit changes with a description, set up and assign project objectives, open software issues from users and contributors, test automatically the code to find bugs before users step into them. Version control is useful for both teams and single users, and it is a good practice to have version control as a standard for any project.</p>
-<p><a href="github.com">GitHub</a> is the most used tool for version control. <a href="https://lab.github.com/githubtraining/introduction-to-github">Here</a> is a quick introduction to get started on Github for new users.</p>
-<p>Alternatives to Github are <a href="https://about.gitlab.com/">GitLab</a> and <a href="https://bitbucket.org/">BitBucket</a>.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="github.com">GitHub</a></td>
+<td align="left">the most used tool for version control</td>
+</tr>
+<tr>
+<td align="left"><a href="https://lab.github.com/githubtraining/introduction-to-github">Github 101</a></td>
+<td align="left">quick introduction to get started on Github</td>
+</tr>
+<tr>
+<td align="left"><a href="https://about.gitlab.com/">GitLab</a> and <a href="https://bitbucket.org/">BitBucket</a></td>
+<td align="left">Two other popular alternatives to <code>Github</code></td>
+</tr>
+</tbody>
+</table>
+</details>
                 
               
               
