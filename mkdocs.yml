@@ -3,7 +3,10 @@ nav:
     - Home: index.md
     - HPC 101: getstarted.md
     - Best practices: best.md
+<<<<<<< HEAD
+=======
     - Software: software.md
+>>>>>>> 24bd586d78367ead73c5f9432163d233fcc69b09
     - HPC programming: progr.md
     - Choose your HPC: choice.md
 docs_dir: develop

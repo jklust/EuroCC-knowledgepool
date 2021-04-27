@@ -103,7 +103,7 @@ When coding, it is essential that all the projects are developed under specific 
 Everytime a job is submitted to the job manager (e.g. SLURM) of a computing cluster, there is an overhead time necessary to elaborate resource provision, preparation for output, and queue organization. Therefore it is wise to create, when possible, longer jobs. One needs to find the correct balance for how to organizing jobs: if these are too long and fail because of some issue, than a lot of time and resources have been wasted, but such problem can be overcome by tracking the outputs of each step to avoid rerunning all computations. For example, at each step of a job outputting something relevant, there can be a condition checking if the specific output is already present.
 
 ## Massive STDOUT outputs
-Try to avoid printing many outputs on the standard output STDOUT. This can be problematic when a lot of parallel jobs are running, letting STDOUT filling all the home directory up, and causing errors and eventual data loss. Use instead an output in software-specific data structures (such as `.RData` files for the `R` language) or at least simple text files.
+Try to avoid printing many outputs on the standard output `STDOUT`, in other words a large amount of printed outputs directly to the terminal screen. This can be problematic when a lot of parallel jobs are running, letting `STDOUT` filling all the home directory up, and causing errors and eventual data loss. Use instead an output in software-specific data structures (such as `.RData` files for the `R` language) or at least simple text files.
 
 ## Packaging a coding project
 When coding a piece of software in which there are multiple newly implemented function, it can be smart to organize all those functions as a package, that can be reused and eventually shared with ease. Such a practice is especially easy and can be mastered very quickly for coding projects in `python` and `R`.
@@ -145,5 +145,4 @@ Version control is the tracking of your development history for a project. This 
     | [GitHub](https://www.github.com) | the most used tool for version control  |
     | [Github 101](https://lab.github.com/githubtraining/introduction-to-github) | quick introduction to get started on Github  |
     | [GitLab](https://about.gitlab.com/) and [BitBucket](https://bitbucket.org/) | Two other popular alternatives to `Github`  |
-
 
