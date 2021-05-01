@@ -8,9 +8,7 @@ This page lists some useful best practices to keep in mind when coding and runni
 Every time we code, testing is a concern and is usually performed by the coder(s) regularly during the project. One can identify some basic main types of test:
 
 - **Regression test**: Given an expected output from a specific input, the code is tested to reproduce that same output.
-
 - **Unit test**: Tests the smallest units of the software (e.g. single functions) to identify bugs, especially in extreme cases of inputs and outputs
-
 - **Continuous integration**: A set of tests for the software runs automatically everytime the software code is updated. This is useful to spot bugs before someone even uses the code.
 
 More things one might need to test are the performance/scalability of the code, usability, response to all the intended types of input data.
