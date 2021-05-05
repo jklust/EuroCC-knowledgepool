@@ -1,3 +1,5 @@
+# HPC programming
+
 As in any other computer, an HPC can be used with sequential programming. This is the practice of writing computer programs executing one instruction after the other, but not instructions simultaneously in parallel, i.e. parallel programming.
 
 ## Parallel programming
