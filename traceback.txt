@@ -1,0 +1,99 @@
+Combined PDF export is enabled
+INFO     -  Cleaning site directory
+INFO     -  Building documentation to directory: /home/rasmus/EuroCC-knowledgepool/docs
+INFO     -  The following pages exist in the docs directory, but are not included in the "nav" configuration:
+              - software.md
+              - Deic/best_deic.md
+              - Deic/getstarted_deic.md
+              - Deic/progr_deic.md
+Error converting software.md to PDF: 'software/' is not in list
+Error converting Deic/best_deic.md to PDF: 'Deic/best_deic/' is not in list
+Error converting Deic/getstarted_deic.md to PDF: 'Deic/getstarted_deic/' is not in list
+Error converting Deic/progr_deic.md to PDF: 'Deic/progr_deic/' is not in list
+
+Traceback (most recent call last):
+  File "/home/rasmus/.local/bin/mkdocs", line 11, in <module>
+    sys.exit(cli())
+  File "/home/rasmus/.local/lib/python3.6/site-packages/click/core.py", line 1137, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/click/core.py", line 1062, in main
+    rv = self.invoke(ctx)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/click/core.py", line 1668, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/rasmus/.local/lib/python3.6/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/click/core.py", line 763, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/mkdocs/__main__.py", line 183, in build_command
+    build.build(config.load_config(**kwargs), dirty=not clean)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/mkdocs/commands/build.py", line 309, in build
+    config['plugins'].run_event('post_build', config=config)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/mkdocs/plugins.py", line 96, in run_event
+    result = method(**kwargs)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/mkdocs_pdf_export_plugin/plugin.py", line 119, in on_post_build
+    self.renderer.write_combined_pdf(abs_pdf_path)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/mkdocs_pdf_export_plugin/renderer.py", line 55, in write_combined_pdf
+    render = self.render_doc(p[0], p[1], p[2])
+  File "/home/rasmus/.local/lib/python3.6/site-packages/mkdocs_pdf_export_plugin/renderer.py", line 42, in render_doc
+    return html.render()
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/__init__.py", line 136, in render
+    optimize_size, font_config, counter_style, image_cache)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/document.py", line 887, in _render
+    [Page(page_box) for page_box in page_boxes],
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/document.py", line 887, in <listcomp>
+    [Page(page_box) for page_box in page_boxes],
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/__init__.py", line 124, in layout_document
+    pages = list(make_all_pages(context, root_box, html, pages))
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/pages.py", line 802, in make_all_pages
+    page, resume_at = remake_page(i, context, root_box, html)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/pages.py", line 741, in remake_page
+    page_number, page_state)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/pages.py", line 552, in make_page
+    positioned_boxes, adjoining_margins, discard=False)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 60, in block_level_layout
+    page_is_empty, absolute_boxes, fixed_boxes, adjoining_margins, discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 75, in block_level_layout_switch
+    discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 128, in block_box_layout
+    absolute_boxes, fixed_boxes, adjoining_margins, discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 520, in block_container_layout
+    absolute_boxes, fixed_boxes, adjoining_margins, discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 60, in block_level_layout
+    page_is_empty, absolute_boxes, fixed_boxes, adjoining_margins, discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 75, in block_level_layout_switch
+    discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 128, in block_box_layout
+    absolute_boxes, fixed_boxes, adjoining_margins, discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 520, in block_container_layout
+    absolute_boxes, fixed_boxes, adjoining_margins, discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 60, in block_level_layout
+    page_is_empty, absolute_boxes, fixed_boxes, adjoining_margins, discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 75, in block_level_layout_switch
+    discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 128, in block_box_layout
+    absolute_boxes, fixed_boxes, adjoining_margins, discard)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/blocks.py", line 379, in block_container_layout
+    for i, (line, resume_at) in enumerate(lines_iterator):
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/inlines.py", line 50, in iter_line_boxes
+    absolute_boxes, fixed_boxes, first_letter_style)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/inlines.py", line 179, in get_next_linebox
+    line_children=[])
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/inlines.py", line 845, in split_inline_box
+    line_placeholders, child_waiting_floats, line_children))
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/inlines.py", line 703, in split_inline_level
+    line_children)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/layout/inlines.py", line 1056, in split_inline_box
+    line_height, new_box.baseline = strut_layout(box.style, context)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/css/computed_values.py", line 730, in strut_layout
+    layout = Layout(context, style['font_size'], style)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/text/line_break.py", line 84, in __init__
+    self.setup(context, font_size, style)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/weasyprint/text/line_break.py", line 100, in setup
+    pango.pango_context_set_round_glyph_positions(pango_context, False)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/cffi/api.py", line 912, in __getattr__
+    make_accessor(name)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/cffi/api.py", line 908, in make_accessor
+    accessors[name](name)
+  File "/home/rasmus/.local/lib/python3.6/site-packages/cffi/api.py", line 838, in accessor_function
+    value = backendlib.load_function(BType, name)
+AttributeError: function/symbol 'pango_context_set_round_glyph_positions' not found in library 'libpango-1.0.so.0': /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0: undefined symbol: pango_context_set_round_glyph_positions
