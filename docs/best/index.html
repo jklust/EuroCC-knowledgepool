@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.be71726b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -78,7 +78,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="EuroCC Knowledge Pool" class="md-header__button md-logo" aria-label="EuroCC Knowledge Pool" data-md-component="logo">
       
@@ -143,11 +145,14 @@
     
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -230,6 +235,8 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -370,6 +377,8 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -491,7 +500,9 @@
 <p>Unit and regression test can be useful, but at some point not really feasible, since the code can scale to be quite large and complex, with a lot of things to control. 
 It is thus a good practice to use continuous integration, and implement simple but representative tests that cover all the code, so that bugs can be spotted often before the final users do that.
 Code coverage tools to implement such tests exists for several programming languages, and also for testing code deployed on Github version control.</p>
-<details class="links"><summary>Links</summary><table>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -520,7 +531,9 @@ Code coverage tools to implement such tests exists for several programming langu
 </details>
 <h2 id="code-styling">Code styling</h2>
 <p>An important feature of a computer code is that it is understandable to other people reading it. To ensure this is the case, a clean and coherent style of coding should be used in a project. Some languages have a preferred coding style, and in some GUIs (graphical user interfaces) those styling rules can be set to be required. One can also use ones own coding style, but it should be one easily readable by others, and it should be the same style throughout the whole project.</p>
-<details class="links"><summary>Links</summary><table>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -549,7 +562,9 @@ Code coverage tools to implement such tests exists for several programming langu
 </details>
 <h2 id="containerized-applications">Containerized applications</h2>
 <p>In this section the benefits of project and package managers, that are a way of organizing packages in separated environments, will be outlined. However, a higher degree of isolation can be achieved by containerization than using environments. By containerizing, a user can virtualize the entire operating system, and make it ready to be deployed on any other machine. One can for example deploy a container without the need of installing anything on the hosting machine! Note that containers are a different concept from Virtual Machines, where it is the hardware being virtualized instead.</p>
-<details class="links"><summary>Links</summary><table>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -594,7 +609,9 @@ Code coverage tools to implement such tests exists for several programming langu
 </details>
 <h2 id="documentation">Documentation</h2>
 <p>When creating a piece of software, it is always a good idea to create a documentation explaining the usage of each element of the code. For packages, there are softwares that automatically create a documentation by using the declarations of functions and eventually some text included into them as a string.</p>
-<details class="links"><summary>Links</summary><table>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -631,7 +648,9 @@ Code coverage tools to implement such tests exists for several programming langu
 </details>
 <h2 id="documents-with-live-code">Documents with live code</h2>
 <p>Programming languages like <code>python</code> and <code>R</code> allows users to write documents that contain text, images and equations together with executable code and its output. Text is usually written using the very immediate markdown <code>language</code>. Markdown files for <code>R</code> can be created in the GUI <code>Rstudio</code>, while <code>python</code> uses <code>jupyter notebooks</code>.</p>
-<details class="links"><summary>Links</summary><table>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -652,7 +671,9 @@ Code coverage tools to implement such tests exists for several programming langu
 </details>
 <h2 id="packageenvironment-management-systems">Package/Environment management systems</h2>
 <p>When coding, it is essential that all the projects are developed under specific software conditions, i.e. the packages and libraries used during development (dependencies) should not change along the project's lifetime, so that variations in things such as output formats and new algorithmic implementations will not create conflicts difficult to trace back under development. An environment and package manager makes the user able to create separated frameworks (environments) where to install specific packages that will not influence other softwares outside the environment in use. A higher degree of isolation can be achieved through containers (see the related part of this page).</p>
-<details class="links"><summary>Links</summary><table>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -684,8 +705,10 @@ Code coverage tools to implement such tests exists for several programming langu
 <h2 id="massive-stdout-outputs">Massive STDOUT outputs</h2>
 <p>Try to avoid printing many outputs on the standard output (<code>STDOUT</code>), in other words a large amount of printed outputs directly to the terminal screen. This can be problematic when a lot of parallel jobs are running, letting <code>STDOUT</code> filling all the home directory up, and causing errors and eventual data loss. Instead use an output in software-specific data structures (such as <code>.RData</code> files for the <code>R</code> language) or at least simple text files.</p>
 <h2 id="packaging-a-coding-project">Packaging a coding project</h2>
-<p>When coding a piece of software in which there are multiple newly implemented function, it can be smart to organize all those functions as a package, that can be reused and eventually shared with ease. Such a practice is especially easy and can be mastered very quickly for coding projects in <code>python</code> and <code>R</code>.</p>
-<details class="links"><summary>Links</summary><table>
+<p>When coding a piece of software in which there are multiple newly implemented functions, it can be smart to organize all those functions as a package, that can be reused and eventually shared with ease. Such a practice is especially easy and can be mastered very quickly for coding projects in <code>python</code> and <code>R</code>.</p>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -709,7 +732,9 @@ Code coverage tools to implement such tests exists for several programming langu
 <p><img alt="slurm_priority" src="../img/slurm_priority.png" title="SLURM priority based on time requested" /></p>
 <p>In figure above, the priority assigned to a SLURM job when the requested time increases, by keeping the memory and CPUs fixed. Decreased priority has higher values. Adapted from <em>A    Slurm   Simulator: Implementation   and Parametric Analysis. Simakov et al 2017.</em></p>
 <p>The danish national HPCs, and most of the other EuroHPC supercomputers, use Slurm as job manager. </p>
-<details class="links"><summary>Links</summary><table>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -730,7 +755,9 @@ Code coverage tools to implement such tests exists for several programming langu
 </details>
 <h2 id="version-control">Version control</h2>
 <p>Version control is the tracking of your development history for a project. This allows multiple people working on the same material to keep changes in sync without stepping over each other's contributions. Version control tools allow to commit changes with a description, set up and assign project objectives, open software issues from users and contributors, test automatically the code to find bugs before users step into them. Version control is useful for both teams and single users, and it is a good practice to have version control as a standard for any project.</p>
-<details class="links"><summary>Links</summary><table>
+<details class="links">
+<summary>Links</summary>
+<table>
 <thead>
 <tr>
 <th align="left">Link</th>
@@ -768,7 +795,8 @@ Code coverage tools to implement such tests exists for several programming langu
       
 <p style="text-align:center;">
   
-    This documentation is part of the EuroHPC Competence Center in Denmark, managed by DeiC.dk.
+    This documentation is part of the EuroHPC Competence Center in Denmark, managed by DeiC.dk.</br>
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fdeic-hpc.github.io%2FEuroCC-knowledgepool%2Fbest/&count_bg=%234051B5&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/>
 
 </p>
 
@@ -776,10 +804,10 @@ Code coverage tools to implement such tests exists for several programming langu
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56a63758.min.js"></script>
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
