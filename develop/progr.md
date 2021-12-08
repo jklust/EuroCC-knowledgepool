@@ -1,14 +1,20 @@
-As in any other computer, an HPC can be used with sequential programming. This is the practice of writing computer programs executing one instruction after the other, but not instructions simultaneously in parallel, i.e. parallel programming.
+As with any other computer, an HPC system can be used with sequential programming. This is the practice of writing computer programs executing one instruction after the other, but not instructions simultaneously in parallel, i.e. parallel programming.
 
 ## Parallel programming
 
 There are different ways of writing parallelized code, while in general there is only one way to write sequential code, generally as a logic sequence of steps.
 
-## openMP (multithreading)
+## OpenMP (multithreading)
 
-A popular way of parallel programming is through writing sequential code and pointing at specific pieces of code that can be parallelized into threads (fork-join mechanism, see figure below from [ADMIN magazine](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.admin-magazine.com%2Flayout%2Fset%2Fprint%2FHPC%2FArticles%2FPymp-OpenMP-like-Python-Programming&psig=AOvVaw0pip0YjijD2uTtvKsEmpxy&ust=1614076196593000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCJiNxcSk_e4CFQAAAAAdAAAAABAN)). A thread is an independent execution of code with its own allocated memory.
+A popular way of parallel programming is through writing sequential code and pointing at specific pieces of code that can be parallelized into threads (fork-join mechanism, see figure below from [ADMIN magazine](https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png)). A thread is an independent execution of code with its own allocated memory.
 
-![](https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png)
+<p align="center">
+  <img src="../img/multithreading.png">
+<!---
+  <img src="https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png">
+-->
+</p>
+
 
 If threads vary in execution time, when they have to be joined together to collect data, some threads might have to wait for others, leading to loss of execution time. It is up to the programmer to best balance the distribution of threads to optimize execution times when possible.
 
@@ -18,43 +24,58 @@ Modern CPUs support openMP in a natural way, since they are usually multicore CP
     | :---------- | :----------------------------------- |
     | [Video course](https://www.youtube.com/watch?v=2GwZKJ4QpME)       | a video course (here the link to the first lesson, you will be able to find all the other lessons associated to that) held by  ARCHER UK. |
     | [OpenMP Starter](https://chryswoods.com/beginning_openmp/)      | A starting guide for OpenMP |
-    | [Wikitolearn course](https://en.wikitolearn.org/Course:Parallel_programming_with_OpenMP_and_MPI)      | An OpenMP course from Wikitolearn |
+    | [WikiToLearn course](https://en.wikitolearn.org/Course:Parallel_programming_with_OpenMP_and_MPI)      | An OpenMP course from WikiToLearn |
     | [MIT course](https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-950-parallel-programming-for-multicore-machines-using-openmp-and-mpi-january-iap-2010/)      | A course from MIT including also MPI usage (next section for more info about MP) |
 
 ## MPI (message passing interface)
 
-MPI is used to distribute data to different processes, that otherwise could not access to such data (picture below, from [LLNL](https://computing.llnl.gov/tutorials/mpi/)). 
+MPI is used to distribute data to different processes, that otherwise could not access to such data (figure below inspired by [LLNL](https://hpc-tutorials.llnl.gov/mpi/what_is_mpi/)). 
 
-![](https://computing.llnl.gov/tutorials/mpi/images/distributed_mem.gif)
+<p align="center">
+  <img src="../img/distributed_memory.png">
+</p>
 
-MPI is considered a very hard language to learn, but this reputation is mostly due to the fact that the message passing is programmed explicitely.
+MPI is considered a very hard language to learn, but this reputation is mostly due to the fact that the message passing is programmed explicitly.
 
 | Link      | Description                          |
     | :---------- | :----------------------------------- |
     | [Video course](https://www.youtube.com/watch?v=R5rIoAkEJBE)       | a video course (here the link to the first lesson, you will be able to find all the other lessons associated to that) held by  ARCHER UK. |
     | [MPI Starter](https://chryswoods.com/beginning_mpi/)      | A starting guide for OpenMP |
-    | [PRACE course](https://www.futurelearn.com/info/courses/python-in-hpc/0/steps/65139)      | A prace course on the MOCC platform futurelearn |
+    | [PRACE course](https://www.futurelearn.com/info/courses/python-in-hpc/0/steps/65139)      | A PRACE course on the MOOC platform FutureLearn |
 
 ## GPU programming
 
-GPUs (graphical processing units) are computing accelerators that are used to boosts heavy linear algebra applications, such as deep learning. A GPU usually features a large number of special processing units that can make the computer code extremely parallelized (figure below from [astrocomputing](http://www.astrocompute.wordpress.com)).
+GPUs (graphical processing units) are computing accelerators that are used to boosts heavy linear algebra applications, such as deep learning. A GPU usually features a large number of special processing units that enable massively parallel execute of code (figure below inspired by [Astronomy Computing Today](https://astrocompute.files.wordpress.com/2011/03/gpu-computing-feature.jpg)).
 
-![GPUfigure](https://astrocompute.files.wordpress.com/2011/03/gpu-computing-feature.jpg)
+<p align="center">
+  <img src="../img/gpu.png">
+</p>
 
-AMD and Nvidia are the two main producers of GPUs, where the latter has dominated the market for a long time. The danish HPCs Type 1 and 2 feature various models of Nvidia graphic cards, while Type 5 (LUMI) has the latest AMD Instinct.
+When utilized properly GPUs can enable performance of certain programs that is unachievable using only CPUs. To achieve this performance GPUs employ an architecture that is vastly different from that of a CPU which is illustrated below (figure inspired by [omisci](https://www.omnisci.com/technical-glossary/cpu-vs-gpu)), where ALU is an acronym for arithmetic logic unit.
 
-The distinction between AMD and Nvidia is mainly due to the fact that they are programmed with two different dialects, and softwares with dedicated multithreading on GPUs need to be coded specifically for the two brands of GPUs.
+<p align="center">
+  <img src="../img/architecture.png">
+</p>
+
+For the sake of clarity text is omitted in parts of the figure with the different parts indicated by their colour code.
+
+When writing programs that utilize GPUs the different architecture of a GPU poses a different set of challenges compared to those of writing parallel programs for CPUs. Specifically as memory on GPUs is limited compared to CPUs a different approach to memory management is required.
+
+
+AMD and Nvidia are the two main producers of GPUs, where the latter has dominated the market for a long time. The Danish HPCs Type 1 and 2 feature various models of Nvidia graphic cards, while Type 5 (LUMI) has the latest AMD Instinct.
+
+The distinction between AMD and Nvidia is mainly due to the fact that they are programmed with two different dialects, and software with dedicated multithreading on GPUs need to be coded specifically for the two brands of GPUs.
 
 ### Nvidia CUDA
 
-CUDA is a C++ dialect that has also various library for the most popular languages and packages (e.g. python, pytorch, MATLAB, ...).
+CUDA is a C++ dialect that has also various library for the most popular languages and packages (e.g. python, PyTorch, MATLAB, ...).
 
 | Link      | Description                          |
     | :---------- | :----------------------------------- |
     | [Nvidia developer training](https://developer.nvidia.com/cuda-education-training)       | Nvidia developer trainings for CUDA programming |
     | [Book archive](https://developer.nvidia.com/cuda-books-archive)      | An archive of books for CUDA programming |
     | [Advanced books](https://bookauthority.org/books/new-cuda-books)      | Some advanced books for coding with CUDA |
-    | [pyCUDA](https://developer.nvidia.com/how-to-cuda-python)      | Code in CUDA with python |
+    | [PyCUDA](https://developer.nvidia.com/how-to-cuda-python)      | Code in CUDA with python |
 
 ### AMD HIP
 

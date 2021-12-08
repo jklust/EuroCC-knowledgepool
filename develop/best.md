@@ -22,7 +22,7 @@ More things one might need to test are the performance/scalability of the code, 
 
 Unit and regression test can be useful, but at some point not really feasible, since the code can scale to be quite large and complex, with a lot of things to control. 
 It is thus a good practice to use continuous integration, and implement simple but representative tests that cover all the code, so that bugs can be spotted often before the final users do that.
-Code coverage tools to implement such tests exists for several programming languages, and also for testing code deployed on Github version control.
+Code coverage tools to implement such tests exists for several programming languages, and also for testing code deployed on GitHub version control.
 
 ??? Links
 
@@ -55,14 +55,14 @@ In this section the benefits of project and package managers, that are a way of 
     | [Docker](https://www.docker.com/why-docker) | An open source widespread container that is popular both in research and industry |
     | [Docker course](https://www.youtube.com/watch?v=fqMOX6JJhGo)      | A course on the use of Docker freely hosted on youtube |
     | [Docker curriculum](https://docker-curriculum.com/)      | Beginner's introduction to docker |
-    | [Docker basics](https://docs.docker.com/get-started/)      | Intoduction tutorials to Docker from the official documentation page |
+    | [Docker basics](https://docs.docker.com/get-started/)      | Intoduction tutorials to Docker from the official documentation page |HPC står for High-Performance Computing og dækker over forskellige typer af maskine, hvis fælles formål er at muliggøre beregninger og datahåndtering, der er besværligt eller umuligt på almindelige computere. Derved er HPC et værktøj, der kan benyttes i forskning til undersøgelser, der ellers ville være umulige. 
     | [Singularity](https://sylabs.io/) | Singularity is another containerization tool. It allows you to decide at which degree a container interacts with the hosting system |
     | [Singularity tutorial](https://singularity-tutorial.github.io/) | A well done Singularity tutorial for HPC users|
     | [Singularity video tutorial](https://www.youtube.com/watch?v=Gowh5pfzOAM) | A video tutorial on Singularity |
     | [Reproducibility by containerization](https://www.youtube.com/watch?v=DA87Ba2dpNM) | A video on reproducibility with Singularity containers |
 
 ## Documentation
-When creating a piece of software, it is always a good idea to create a documentation explaining the usage of each element of the code. For packages, there are softwares that automatically create a documentation by using the declarations of functions and eventually some text included into them as a string.
+When creating a piece of software, it is always a good idea to create a documentation explaining the usage of each element of the code. For packages, there are software that automatically create a documentation by using the declarations of functions and eventually some text included into them as a string.
 
 ??? Links
 
@@ -86,7 +86,7 @@ Programming languages like `python` and `R` allows users to write documents that
     | [Jupyter notebooks](https://jupyter.org/)       | create interactive code with `python`. You can write `R` code in a jupyter notebook by using the `python` package [rpy2](https://rpy2.github.io/doc/latest/html/index.html)  |
 
 ## Package/Environment management systems
-When coding, it is essential that all the projects are developed under specific software conditions, i.e. the packages and libraries used during development (dependencies) should not change along the project's lifetime, so that variations in things such as output formats and new algorithmic implementations will not create conflicts difficult to trace back under development. An environment and package manager makes the user able to create separated frameworks (environments) where to install specific packages that will not influence other softwares outside the environment in use. A higher degree of isolation can be achieved through containers (see the related part of this page).
+When coding, it is essential that all the projects are developed under specific software conditions, i.e. the packages and libraries used during development (dependencies) should not change along the project's lifetime, so that variations in things such as output formats and new algorithmic implementations will not create conflicts difficult to trace back under development. An environment and package manager makes the user able to create separated frameworks (environments) where to install specific packages that will not influence other software outside the environment in use. A higher degree of isolation can be achieved through containers (see the related part of this page).
 
 ??? Links
 
@@ -99,10 +99,10 @@ When coding, it is essential that all the projects are developed under specific 
 
 
 ## Many short jobs running
-Everytime a job is submitted to the job manager (e.g. SLURM) of a computing cluster, there is an overhead time necessary to elaborate resource provision, preparation for output, and queue organization. Therefore it is wise to create, when possible, longer jobs. One needs to find the correct balance for how to organizing jobs: if these are too long and fail because of some issue, than a lot of time and resources have been wasted, but such problems can be overcome by tracking the outputs of each step to avoid rerunning all computations. For example, at each step of a job outputting something relevant, there can be a condition checking if the specific output is already present.
+Every time a job is submitted to the job manager (e.g. Slurm) of a computing cluster, there is an overhead time necessary to elaborate resource provision, preparation for output, and queue organization. Therefore it is wise to create, when possible, longer jobs. One needs to find the correct balance for how to organizing jobs: if these are too long and fail because of some issue, than a lot of time and resources have been wasted, but such problems can be overcome by tracking the outputs of each step to avoid rerunning all computations. For example, at each step of a job outputting something relevant, there can be a condition checking if the specific output is already present.
 
-## Massive STDOUT outputs
-Try to avoid printing many outputs on the standard output (`STDOUT`), in other words a large amount of printed outputs directly to the terminal screen. This can be problematic when a lot of parallel jobs are running, letting `STDOUT` filling all the home directory up, and causing errors and eventual data loss. Instead use an output in software-specific data structures (such as `.RData` files for the `R` language) or at least simple text files.
+## Massive standard outputs
+Try to avoid printing many outputs on the standard output (`stdout`), in other words a large amount of printed outputs directly to the terminal screen. This can be problematic when a lot of parallel jobs are running, letting `stdout` filling all the home directory up, and causing errors and eventual data loss. Instead use an output in software-specific data structures (such as `.RData` files for the `R` language) or at least simple text files.
 
 ## Packaging a coding project
 When coding a piece of software in which there are multiple newly implemented functions, it can be smart to organize all those functions as a package, that can be reused and eventually shared with ease. Such a practice is especially easy and can be mastered very quickly for coding projects in `python` and `R`.
@@ -115,16 +115,17 @@ When coding a piece of software in which there are multiple newly implemented fu
     | [R package development](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio)       | Develop an `R` package using `Rstudio`  |
 
 
-## Pipelining and submitting jobs in SLURM 
+## Pipe-lining and submitting jobs in Slurm 
 
-[SLURM](https://slurm.schedmd.com/) is a job scheduler. It allows a user to specify a series of commands and resources requirements to run such commands. Slurm does consider the job submission on an HPC system together with all the other jobs, and prioritize them according to the resources requirement and the available computational power.
+[Slurm](https://slurm.schedmd.com/) is a job scheduler. It allows a user to specify a series of commands and resources requirements to run such commands. Slurm does consider the job submission on an HPC system together with all the other jobs, and prioritize them among other things according to the resources requirement and the available computational power.
 
+<p align="center">
+  <img src="../img/slurm_priority.png">
+</p>
 
-![slurm_priority](img/slurm_priority.png "SLURM priority based on time requested")
+In figure above, the priority assigned to a Slurm job when the requested time increases, by keeping the memory and CPUs fixed. Decreased priority has higher values. Adapted from *A Slurm Simulator: Implementation and Parametric Analysis. Simakov et al 2017.*
 
-In figure above, the priority assigned to a SLURM job when the requested time increases, by keeping the memory and CPUs fixed. Decreased priority has higher values. Adapted from *A	Slurm	Simulator: Implementation	and	Parametric Analysis. Simakov et al 2017.*
-
- The danish national HPCs, and most of the other EuroHPC supercomputers, use Slurm as job manager. 
+ The Danish national HPCs, and most of the other EuroHPC supercomputers, use Slurm as job manager. 
 
 ??? Links
 
