@@ -5,6 +5,7 @@ nav:
     - Best practices: best.md
     - HPC programming: progr.md
     - Choose your HPC: choice.md
+    - HPC types: hpc_types.md
 docs_dir: develop
 site_dir: docs
 plugins:
