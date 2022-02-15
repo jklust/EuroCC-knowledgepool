@@ -49,3 +49,10 @@ Conspicuous consumption describes and explains the consumer practice of buying a
 
 [Jinkins, D. "Conspicuous consumption in the United States and China" (2016), Journal of Economic Behavior & Organization.](https://www.sciencedirect.com/science/article/pii/S0167268116300312)
 
+
+### XPEROHS - Expression and Persiving Online Hate Speech
+<!---### Affiliation: University of Southern Denmark -->
+
+The XPEROHS-project aims to investigate online hate speech. Its finding involves the semantics and pragmatics of denigration, the covert dynamics of hate speech, perceptions of spoken and written hate speech, and rhetorical hate speech strategies employed in online interaction. The project uses data from large-scale Facebook and Twitter corpora, yielding corpus sizes of hundreds of millions. These enormous amounts of data make linguistic annotation extremely challenging. Therefore, it is essential to the project that this annotation can be performed on HPC clusters rather than laptops. 
+
+[Baumgarten, N. etal. "Towards Balance and Boundaries in Public Discourse: Expressing and Perceiving Online Hate Speech (XPEROHS)" (2019), RASK – International journal of language and communication.](https://www.sdu.dk/-/media/files/om_sdu/institutter/isk/forskningspublikationer/rask/rask+50/baumgarten+et+al.pdf)
