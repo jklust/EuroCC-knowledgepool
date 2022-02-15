@@ -55,4 +55,13 @@ Conspicuous consumption describes and explains the consumer practice of buying a
 
 The XPEROHS-project aims to investigate online hate speech. Its finding involves the semantics and pragmatics of denigration, the covert dynamics of hate speech, perceptions of spoken and written hate speech, and rhetorical hate speech strategies employed in online interaction. The project uses data from large-scale Facebook and Twitter corpora, yielding corpus sizes of hundreds of millions. These enormous amounts of data make linguistic annotation extremely challenging. Therefore, it is essential to the project that this annotation can be performed on HPC clusters rather than laptops. 
 
-[Baumgarten, N. etal. "Towards Balance and Boundaries in Public Discourse: Expressing and Perceiving Online Hate Speech (XPEROHS)" (2019), RASK – International journal of language and communication.](https://www.sdu.dk/-/media/files/om_sdu/institutter/isk/forskningspublikationer/rask/rask+50/baumgarten+et+al.pdf)
+[Baumgarten, N. et al. "Towards Balance and Boundaries in Public Discourse: Expressing and Perceiving Online Hate Speech (XPEROHS)" (2019), RASK – International journal of language and communication.](https://www.sdu.dk/-/media/files/om_sdu/institutter/isk/forskningspublikationer/rask/rask+50/baumgarten+et+al.pdf)
+
+
+### Detection of *Mycobacterium leprae* in archeaological human dental calculus using HPC-enabled sequencing
+<!---### Affiliation: University of Copenhagen -->
+
+This study is the first to demonstrate the recovery of ancient *M. leprae* biomolecules from archaeological dental calculus. As dental calculus are pretty robust, it is often conserved over long periods. Therefore, it may represent an alternative sample source to bones and teeth for detecting and molecularly characterizing M. leprae in individuals from the archaeological record, especially in the absence of definitive osteological markers. This is particularly
+relevant for cases where human remains are poorly preserved or too precious to warrant destructive bone sampling. The *M. leprae* genome was recovered using shotgun sequencing done using HPC resources.
+
+[Fotakis, A. K. et al. "Multi-omic detection of *Mycobacterium leprae* in archaeological human dental calculus" (2020), Phil. Trans. R. Soc. B 375: 20190584.](https://royalsocietypublishing.org/doi/10.1098/rstb.2019.0584)
