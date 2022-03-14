@@ -6,6 +6,7 @@ nav:
     - HPC programming: progr.md
     - Choose your HPC: choice.md
     - HPC types: hpc_types.md
+    - HPC use cases: use_cases.md
 docs_dir: develop
 site_dir: docs
 plugins:
