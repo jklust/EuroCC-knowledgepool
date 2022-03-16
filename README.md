@@ -16,7 +16,7 @@ After any changes to the markdown files, the corresponding HTML files can be upd
 $ mkdocs build
 ```
 
-in the folder containing the konfiguration file *mkdocs.yml*. The updated HTML files appear in their respective folders. After this the work can be pushed to git and the webpage is updated.
+in the folder containing the configuration file *mkdocs.yml*. The updated HTML files appear in their respective folders. After this the work can be pushed to git and the webpage is updated.
 
 Everything can also be seen in your own browser while developing by running
 
