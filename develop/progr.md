@@ -1,4 +1,4 @@
-As with any other computer, an HPC system can be used with sequential programming. This is the practice of writing computer programs executing one instruction after the other, but not instructions simultaneously in parallel, i.e. parallel programming.
+As with any other computer, an HPC system can be used with sequential programming. This is the practice of writing computer programs executing one instruction after the other, but not instructions simultaneously in parallel, i.e., parallel programming.
 
 ## Parallel programming
 
@@ -56,18 +56,18 @@ The distinction between AMD and Nvidia is mainly due to the fact that they are p
 
 ### Nvidia CUDA
 
-CUDA is a C++ dialect that has also various library for the most popular languages and packages (e.g. python, PyTorch, MATLAB, ...).
+`CUDA` is a `C++` dialect that has also various library for the most popular languages and packages (e.g. `Python`, `PyTorch`, `MATLAB`, ...).
 
 | Link :link:   | Description                          |
 | :---------- | :----------------------------------- |
-| [Nvidia developer training](https://developer.nvidia.com/cuda-education-training)       | Nvidia developer trainings for CUDA programming |
-| [Book archive](https://developer.nvidia.com/cuda-books-archive)      | An archive of books for CUDA programming |
-| [Advanced books](https://bookauthority.org/books/new-cuda-books)      | Some advanced books for coding with CUDA |
-| [PyCUDA](https://developer.nvidia.com/how-to-cuda-python)      | Code in CUDA with python |
+| [Nvidia developer training](https://developer.nvidia.com/cuda-education-training)       | Nvidia developer trainings for `CUDA` programming |
+| [Book archive](https://developer.nvidia.com/cuda-books-archive)      | An archive of books for `CUDA` programming |
+| [Advanced books](https://bookauthority.org/books/new-cuda-books)      | Some advanced books for coding with `CUDA` |
+| [PyCUDA](https://developer.nvidia.com/how-to-cuda-python)      | Code in `CUDA` with python |
 
 ### AMD HIP
 
-HIP is a dialect for AMD GPUs of recent introduction. It has the advantage of being able to be compiled for both AMD and Nvidia hardware. CUDA code can be converted to HIP code almost automatically with some extra adjustments by the programmer.
+HIP is a dialect for AMD GPUs of recent introduction. It has the advantage of being able to be compiled for both AMD and Nvidia hardware. `CUDA` code can be converted to HIP code almost automatically with some extra adjustments by the programmer.
 
 The LUMI HPC consortia has already organized a course for HIP coding and CUDA-to-HIP conversion. Check out their page for new courses.
 
