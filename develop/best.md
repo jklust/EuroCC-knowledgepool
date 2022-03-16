@@ -6,15 +6,15 @@ This page lists some useful best practices to keep in mind when coding and runni
 ## Code coverage, testing, continuous integration
 Every time we code, testing is a concern and is usually performed by the coder(s) regularly during the project. One can identify some basic main types of test:
 
-=== "Regression test"
+**Regression test**
 
     *Given an expected output from a specific input, the code is tested to reproduce that same output.*
 
-=== "Unit test"
+**Unit test**
 
     *Tests the smallest units of the software (e.g. single functions) to identify bugs, especially in extreme cases of inputs and outputs*
 
-=== "Continuous integration"
+**Continuous integration**
 
     *A set of tests the software runs automatically everytime the code is updated. This is useful to spot bugs before someone even uses the code.*
 
