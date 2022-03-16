@@ -21,11 +21,11 @@ If threads vary in execution time, when they have to be joined together to colle
 Modern CPUs support openMP in a natural way, since they are usually multicore CPUs and each core can execute threads independently. OpenMP is available as an extension to the programming languages C and Fortran and is mostly used to parallelize for loops that constitute a time bottleneck for the software execution.
 
 | Link      | Description                          |
-    | :---------- | :----------------------------------- |
-    | [Video course](https://www.youtube.com/watch?v=2GwZKJ4QpME)       | a video course (here the link to the first lesson, you will be able to find all the other lessons associated to that) held by  ARCHER UK. |
-    | [OpenMP Starter](https://chryswoods.com/beginning_openmp/)      | A starting guide for OpenMP |
-    | [WikiToLearn course](https://en.wikitolearn.org/Course:Parallel_programming_with_OpenMP_and_MPI)      | An OpenMP course from WikiToLearn |
-    | [MIT course](https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-950-parallel-programming-for-multicore-machines-using-openmp-and-mpi-january-iap-2010/)      | A course from MIT including also MPI usage (next section for more info about MP) |
+| :---------- | :----------------------------------- |
+| [Video course](https://www.youtube.com/watch?v=2GwZKJ4QpME)       | a video course (here the link to the first lesson, you will be able to find all the other lessons associated to that) held by  ARCHER UK. |
+| [OpenMP Starter](https://chryswoods.com/beginning_openmp/)      | A starting guide for OpenMP |
+| [WikiToLearn course](https://en.wikitolearn.org/Course:Parallel_programming_with_OpenMP_and_MPI)      | An OpenMP course from WikiToLearn |
+| [MIT course](https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-950-parallel-programming-for-multicore-machines-using-openmp-and-mpi-january-iap-2010/)      | A course from MIT including also MPI usage (next section for more info about MP) |
 
 ## MPI (message passing interface)
 
@@ -38,10 +38,10 @@ MPI is used to distribute data to different processes, that otherwise could not 
 MPI is considered a very hard language to learn, but this reputation is mostly due to the fact that the message passing is programmed explicitly.
 
 | Link      | Description                          |
-    | :---------- | :----------------------------------- |
-    | [Video course](https://www.youtube.com/watch?v=R5rIoAkEJBE)       | a video course (here the link to the first lesson, you will be able to find all the other lessons associated to that) held by  ARCHER UK. |
-    | [MPI Starter](https://chryswoods.com/beginning_mpi/)      | A starting guide for OpenMP |
-    | [PRACE course](https://www.futurelearn.com/info/courses/python-in-hpc/0/steps/65139)      | A PRACE course on the MOOC platform FutureLearn |
+| :---------- | :----------------------------------- |
+| [Video course](https://www.youtube.com/watch?v=R5rIoAkEJBE)       | a video course (here the link to the first lesson, you will be able to find all the other lessons associated to that) held by  ARCHER UK. |
+| [MPI Starter](https://chryswoods.com/beginning_mpi/)      | A starting guide for OpenMP |
+| [PRACE course](https://www.futurelearn.com/info/courses/python-in-hpc/0/steps/65139)      | A PRACE course on the MOOC platform FutureLearn |
 
 ## GPU programming
 
@@ -71,11 +71,11 @@ The distinction between AMD and Nvidia is mainly due to the fact that they are p
 CUDA is a C++ dialect that has also various library for the most popular languages and packages (e.g. python, PyTorch, MATLAB, ...).
 
 | Link      | Description                          |
-    | :---------- | :----------------------------------- |
-    | [Nvidia developer training](https://developer.nvidia.com/cuda-education-training)       | Nvidia developer trainings for CUDA programming |
-    | [Book archive](https://developer.nvidia.com/cuda-books-archive)      | An archive of books for CUDA programming |
-    | [Advanced books](https://bookauthority.org/books/new-cuda-books)      | Some advanced books for coding with CUDA |
-    | [PyCUDA](https://developer.nvidia.com/how-to-cuda-python)      | Code in CUDA with python |
+| :---------- | :----------------------------------- |
+| [Nvidia developer training](https://developer.nvidia.com/cuda-education-training)       | Nvidia developer trainings for CUDA programming |
+| [Book archive](https://developer.nvidia.com/cuda-books-archive)      | An archive of books for CUDA programming |
+| [Advanced books](https://bookauthority.org/books/new-cuda-books)      | Some advanced books for coding with CUDA |
+| [PyCUDA](https://developer.nvidia.com/how-to-cuda-python)      | Code in CUDA with python |
 
 ### AMD HIP
 
@@ -84,7 +84,7 @@ HIP is a dialect for AMD GPUs of recent introduction. It has the advantage of be
 The LUMI HPC consortia has already organized a course for HIP coding and CUDA-to-HIP conversion. Check out their page for new courses.
 
 | Link      | Description                          |
-    | :---------- | :----------------------------------- |
-    | [Video introduction 1](https://www.youtube.com/watch?v=3ZXbRJVvgJs)       | Video introduction to HIP |
-    | [Video introduction 2](https://www.youtube.com/watch?v=57FwfePRd-Y)      | Video introduction to HIP |
-    | [AMD programming guide](https://rocmdocs.amd.com/en/latest/Programming_Guides/Programming-Guides.html)      | Programming guide to HIP from the producer AMD |
+| :---------- | :----------------------------------- |
+| [Video introduction 1](https://www.youtube.com/watch?v=3ZXbRJVvgJs)       | Video introduction to HIP |
+| [Video introduction 2](https://www.youtube.com/watch?v=57FwfePRd-Y)      | Video introduction to HIP |
+| [AMD programming guide](https://rocmdocs.amd.com/en/latest/Programming_Guides/Programming-Guides.html)      | Programming guide to HIP from the producer AMD |
