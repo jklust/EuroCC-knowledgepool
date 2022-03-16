@@ -12,7 +12,7 @@ AAU: 0
 -->
 
 
-## The Danish Blood Donor Study (DBDS) genomic cohort.
+## The Danish Blood Donor Study (DBDS) genomic cohort
 <!---### Affiliations: KU, AU, CBS, AUH, KUH, OUH, RUH -->
 
 The DBDS genomic cohort is a comprehensive catalog for large-scale genetic analyses concerning numerous environmental and lifestyle factors affecting donors' health. The study includes data from more than 100.000 donors. It has assessed quality measures such as kinship, ethnicity, and minor allele frequency. The study makes continuous assessments of the donors, resulting in large amounts of data collected and processed using HPC. The use of HPC allows for simultaneously testing multiple hypotheses and dynamical scaling.
