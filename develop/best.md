@@ -48,7 +48,7 @@ In this section the benefits of project and package managers, that are a way of 
 | [Docker](https://www.docker.com/why-docker) | An open source widespread container that is popular both in research and industry |
 | [Docker course](https://www.youtube.com/watch?v=fqMOX6JJhGo)      | A course on the use of Docker freely hosted on youtube |
 | [Docker curriculum](https://docker-curriculum.com/)      | Beginner's introduction to docker |
-| [Docker basics](https://docs.docker.com/get-started/)      | Intoduction tutorials to Docker from the official documentation page |HPC står for High-Performance Computing og dækker over forskellige typer af maskine, hvis fælles formål er at muliggøre beregninger og datahåndtering, der er besværligt eller umuligt på almindelige computere. Derved er HPC et værktøj, der kan benyttes i forskning til undersøgelser, der ellers ville være umulige. 
+| [Docker basics](https://docs.docker.com/get-started/)      | Intoduction tutorials to Docker from the official documentation page |
 | [Singularity](https://sylabs.io/) | Singularity is another containerization tool. It allows you to decide at which degree a container interacts with the hosting system |
 | [Singularity tutorial](https://singularity-tutorial.github.io/) | A well done Singularity tutorial for HPC users|
 | [Singularity video tutorial](https://www.youtube.com/watch?v=Gowh5pfzOAM) | A video tutorial on Singularity |
