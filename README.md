@@ -2,7 +2,7 @@
 Knowledge pool [documentation page](https://deic-hpc.github.io/EuroCC-knowledgepool/) for the danish EuroHPC competence center
 
 ## Setup
-The webpage is created using [MkDocs](https://www.markdownguide.org/). This means that you only have to write markdown dokuments which then is translated to HTML files by MkDocs.
+The webpage is created using [MkDocs](https://www.markdownguide.org/). This means that you only have to write markdown documents which then is translated to HTML files by MkDocs.
 
 It is easy to use. The configuration file (*mkdocs.yml*) is placed in the root folder, and contains the layout of the webpage. 
 
