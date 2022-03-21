@@ -21,7 +21,7 @@ Unit and regression test can be useful, but at some point not really feasible, s
 It is thus a good practice to use continuous integration, and implement simple but representative tests that cover all the code, so that bugs can be spotted often before the final users do that.
 Code coverage tools to implement such tests exists for several programming languages, and also for testing code deployed on GitHub version control.
 
-| Link :link:   | Description |
+| Link | Description |
 |:--- |:--- |
 |[pyTest](https://pytest.org/)| A package to test `python` code |
 |[Cmake](https://cmake.org/Wiki/CMake/Testing_With_CTest)| To test both `C`, `C++` and `Fortran code`|
@@ -33,7 +33,7 @@ Code coverage tools to implement such tests exists for several programming langu
 An important feature of a computer code is that it is understandable to other people reading it. To ensure this is the case, a clean and coherent style of coding should be used in a project. Some languages have a preferred coding style, and in some GUIs (graphical user interfaces) those styling rules can be set to be required. One can also use ones own coding style, but it should be one easily readable by others, and it should be the same style throughout the whole project.
 
 
-| Link :link:   | Description                          |
+| Link    | Description                          |
 | :---------- | :----------------------------------- |
 | [styleguide](https://google.github.io/styleguide/)       | Google guide for coding styles of the major programming languages  |
 | [awesome guidelines](https://kristories.gitbook.io/awesome-guidelines/)      | A guide to coding styles covering also documentations, tools and development environments |
@@ -43,7 +43,7 @@ An important feature of a computer code is that it is understandable to other pe
 ## Containerized applications
 In this section the benefits of project and package managers, that are a way of organizing packages in separated environments, will be outlined. However, a higher degree of isolation can be achieved by containerization than using environments. By containerizing, a user can virtualize the entire operating system, and make it ready to be deployed on any other machine. One can for example deploy a container without the need of installing anything on the hosting machine! Note that containers are a different concept from Virtual Machines, where it is the hardware being virtualized instead.
 
-| Link :link:       | Description                          |
+| Link        | Description                          |
 | :---------- | :----------------------------------- |
 | [Docker](https://www.docker.com/why-docker) | An open source widespread container that is popular both in research and industry |
 | [Docker course](https://www.youtube.com/watch?v=fqMOX6JJhGo)      | A course on the use of Docker freely hosted on youtube |
@@ -57,7 +57,7 @@ In this section the benefits of project and package managers, that are a way of 
 ## Documentation
 When creating a piece of software, it is always a good idea to create a documentation explaining the usage of each element of the code. For packages, there are software that automatically create a documentation by using the declarations of functions and eventually some text included into them as a string.
 
-| Link :link:       | Description                          |
+| Link        | Description                          |
 | :---------- | :----------------------------------- |
 | [MkDocs](https://www.mkdocs.org/) | A generator for static webpages, with design and themes targeted to documentation pages, but also other type of websites. This website is itself made with MkDocs. |
 | [mkdocstrings](https://github.com/pawamoy/mkdocstrings) | Python handler to automatically generate documentation with MkDocs |
@@ -69,7 +69,7 @@ When creating a piece of software, it is always a good idea to create a document
 ## Documents with live code
 Programming languages like `python` and `R` allows users to write documents that contain text, images and equations together with executable code and its output. Text is usually written using the very immediate markdown `language`. Markdown files for `R` can be created in the GUI `Rstudio`, while `python` uses `jupyter notebooks`.
 
-| Link :link:       | Description                          |
+| Link        | Description                          |
 | :---------- | :----------------------------------- |
 | [Introduction to Markdown](https://rmarkdown.rstudio.com/articles_intro.html)       | Markdown for `R` in `Rstudio`  |
 | [Jupyter notebooks](https://jupyter.org/)       | create interactive code with `python`. You can write `R` code in a jupyter notebook by using the `python` package [rpy2](https://rpy2.github.io/doc/latest/html/index.html)  |
@@ -77,7 +77,7 @@ Programming languages like `python` and `R` allows users to write documents that
 ## Package/Environment management systems
 When coding, it is essential that all the projects are developed under specific software conditions, i.e. the packages and libraries used during development (dependencies) should not change along the project's lifetime, so that variations in things such as output formats and new algorithmic implementations will not create conflicts difficult to trace back under development. An environment and package manager makes the user able to create separated frameworks (environments) where to install specific packages that will not influence other software outside the environment in use. A higher degree of isolation can be achieved through containers (see the related part of this page).
 
-| Link :link:       | Description                          |
+| Link        | Description                          |
 | :---------- | :----------------------------------- |
 | [Conda](https://docs.conda.io/en/latest/) | an easy to use and very popular environment manager  |
 | [Getting started with conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) | Introduction to `conda` setup and usage from the official documentation |
@@ -94,7 +94,7 @@ Try to avoid printing many outputs on the standard output (`stdout`), in other w
 ## Packaging a coding project
 When coding a piece of software in which there are multiple newly implemented functions, it can be smart to organize all those functions as a package, that can be reused and eventually shared with ease. Such a practice is especially easy and can be mastered very quickly for coding projects in `python` and `R`.
 
-| Link :link:       | Description                          |
+| Link        | Description                          |
 | :--- | :--- |
 | [pyPA](https://packaging.python.org/tutorials/packaging-projects/) | `python` packaging user guide  |
 | [R package development](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio)       | Develop an `R` package using `Rstudio`  |
@@ -110,7 +110,7 @@ In figure above, the priority assigned to a Slurm job when the requested time in
 
  The Danish national HPCs, and most of the other EuroHPC supercomputers, use Slurm as job manager. 
 
-| Link :link:       | Description                          |
+| Link        | Description                          |
 | :---------- | :----------------------------------- |
 | [SLURM example 1](https://genome.au.dk/docs/interacting-with-the-queue/ ) and [SLURM example 2](https://researchcomputing.princeton.edu/slurm )| Some examples of how to make a Slurm script to submit a job from the danish HPC GenomeDK and from Princeton Research Computing. |
 | [Gwf, a simple python tool to create interdependent job submissions](https://gwf.app/ )       | Gwf, developed at the University of Aarhus, makes it easy to create Slurm jobs and organize them as a pipeline with dependencies, using the python language (you need python 3.5+). You get to simply create the shell scripts and the dependencies, without the complicating syntax of Slurm. The page contains also a useful guide. |
@@ -119,7 +119,7 @@ In figure above, the priority assigned to a Slurm job when the requested time in
 ## Version control
 Version control is the tracking of your development history for a project. This allows multiple people working on the same material to keep changes in sync without stepping over each other's contributions. Version control tools allow to commit changes with a description, set up and assign project objectives, open software issues from users and contributors, test automatically the code to find bugs before users step into them. Version control is useful for both teams and single users, and it is a good practice to have version control as a standard for any project.
 
-| Link :link:       | Description                          |
+| Link        | Description                          |
 | :---------- | :----------------------------------- |
 | [GitHub](https://www.github.com) | the most used tool for version control  |
 | [Github 101](https://lab.github.com/githubtraining/introduction-to-github) | quick introduction to get started on Github  |
