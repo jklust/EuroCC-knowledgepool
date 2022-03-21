@@ -1,5 +1,5 @@
 # EuroCC-knowledgepool
-Knowledge pool documentation page for the danish EuroHPC competence center
+Knowledge pool [documentation page](https://deic-hpc.github.io/EuroCC-knowledgepool/) for the danish EuroHPC competence center
 
 ## Setup
 The webpage is created using [MkDocs](https://www.markdownguide.org/). This means that you only have to write markdown dokuments which then is translated to HTML files by MkDocs.
@@ -25,6 +25,8 @@ $ mkdocs serve
 ```
 
 once run you must crtl-click on the http link, or copy it into your browser.
+
+Note that the DeiC pages [Basics of HPC](https://www.deic.dk/da/Supercomputere/Vejledninger-og-guides/Basics-of-HPC), [Best practices of HPC](https://www.deic.dk/da/Supercomputere/Vejledninger-og-guides/Best-practices-for-HPC), and [HPC programming](https://www.deic.dk/da/Supercomputere/Vejledninger-og-guides/HPC-Programming) are all copied from the git as well. Therefore one should take care that these are parsed correctly when updating the knowledge pool (note that there is a 24 hour lag before the DeiC page is updated). However, there should be no problems as long as simple markdown are used.
 
 ## Installation of MkDocs
 MkDocs can be installed via pip
