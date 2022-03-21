@@ -104,7 +104,7 @@ When coding a piece of software in which there are multiple newly implemented fu
 
 [Slurm](https://slurm.schedmd.com/) is a job scheduler. It allows a user to specify a series of commands and resources requirements to run such commands. Slurm does consider the job submission on an HPC system together with all the other jobs, and prioritize them among other things according to the resources requirement and the available computational power.
 
-![slurm](./img/slurm_priority.png)
+![slurm](https://github.com/DeiC-HPC/EuroCC-knowledgepool/raw/3eff312a2006189d855cc3b41d0e6e0496213f34/develop/img/slurm_priority.png)
 
 In figure above, the priority assigned to a Slurm job when the requested time increases, by keeping the memory and CPUs fixed. Decreased priority has higher values. Adapted from *A Slurm Simulator: Implementation and Parametric Analysis. Simakov et al 2017.*
 
