@@ -8,7 +8,7 @@ There are different ways of writing parallelized code, while in general there is
 
 A popular way of parallel programming is through writing sequential code and pointing at specific pieces of code that can be parallelized into threads (fork-join mechanism, see figure below inspired from [ADMIN magazine](https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png)). A thread is an independent execution of code with its own allocated memory.
 
-![multi](https://github.com/DeiC-HPC/EuroCC-knowledgepool/blob/d14526a191b63537575ca10b9587b3e30a5723f4/develop/img/multithreading.png)
+![multi](./img/multithreading.png)
 
 If threads vary in execution time, when they have to be joined together to collect data, some threads might have to wait for others, leading to loss of execution time. It is up to the programmer to best balance the distribution of threads to optimize execution times when possible.
 
@@ -25,7 +25,7 @@ Modern CPUs support openMP in a natural way, since they are usually multicore CP
 
 MPI is used to distribute data to different processes, that otherwise could not access to such data (figure below inspired by [LLNL](https://hpc-tutorials.llnl.gov/mpi/what_is_mpi/)). 
 
-![distributed memory](https://github.com/DeiC-HPC/EuroCC-knowledgepool/blob/d14526a191b63537575ca10b9587b3e30a5723f4/develop/img/distributed_memory.png)
+![distributed memory](./img/distributed_memory.png)
 
 MPI is considered a very hard language to learn, but this reputation is mostly due to the fact that the message passing is programmed explicitly.
 
@@ -39,11 +39,11 @@ MPI is considered a very hard language to learn, but this reputation is mostly d
 
 GPUs (graphical processing units) are computing accelerators that are used to boosts heavy linear algebra applications, such as deep learning. A GPU usually features a large number of special processing units that enable massively parallel execute of code (figure below inspired by [Astronomy Computing Today](https://astrocompute.files.wordpress.com/2011/03/gpu-computing-feature.jpg)).
 
-![gpu](https://github.com/DeiC-HPC/EuroCC-knowledgepool/blob/d14526a191b63537575ca10b9587b3e30a5723f4/develop/img/gpu.png)
+![gpu](./img/gpu.png)
 
 When utilized properly GPUs can enable performance of certain programs that is unachievable using only CPUs. To achieve this performance GPUs employ an architecture that is vastly different from that of a CPU which is illustrated below (figure inspired by [omisci](https://www.omnisci.com/technical-glossary/cpu-vs-gpu)), where ALU is an acronym for arithmetic logic unit.
 
-![architechture](https://github.com/DeiC-HPC/EuroCC-knowledgepool/blob/d14526a191b63537575ca10b9587b3e30a5723f4/develop/img/architecture.png)
+![architechture](./img/architecture.png)
 
 For the sake of clarity text is omitted in parts of the figure with the different parts indicated by their colour code.
 
