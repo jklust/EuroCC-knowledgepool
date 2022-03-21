@@ -457,14 +457,14 @@
 <h2 id="parallel-programming">Parallel programming</h2>
 <p>There are different ways of writing parallelized code, while in general there is only one way to write sequential code, generally as a logic sequence of steps.</p>
 <h2 id="openmp-multithreading">OpenMP (multithreading)</h2>
-<p>A popular way of parallel programming is through writing sequential code and pointing at specific pieces of code that can be parallelized into threads (fork-join mechanism, see figure below from <a href="https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png">ADMIN magazine</a>). A thread is an independent execution of code with its own allocated memory.</p>
-<p><a href="https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png"><img alt="multi" src="https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png" /></a></p>
+<p>A popular way of parallel programming is through writing sequential code and pointing at specific pieces of code that can be parallelized into threads (fork-join mechanism, see figure below inspired from <a href="https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png">ADMIN magazine</a>). A thread is an independent execution of code with its own allocated memory.</p>
+<p><img alt="multi" src="https://github.com/DeiC-HPC/EuroCC-knowledgepool/raw/b4a392a96074a4fe6bcce996a461a1b85d8b45b7/develop/img/multithreading.png" /></p>
 <p>If threads vary in execution time, when they have to be joined together to collect data, some threads might have to wait for others, leading to loss of execution time. It is up to the programmer to best balance the distribution of threads to optimize execution times when possible.</p>
 <p>Modern CPUs support openMP in a natural way, since they are usually multicore CPUs and each core can execute threads independently. OpenMP is available as an extension to the programming languages C and Fortran and is mostly used to parallelize for loops that constitute a time bottleneck for the software execution.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Link <img alt="🔗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f517.svg" title=":link:" /></th>
+<th align="left">Link</th>
 <th align="left">Description</th>
 </tr>
 </thead>
@@ -489,12 +489,12 @@
 </table>
 <h2 id="mpi-message-passing-interface">MPI (message passing interface)</h2>
 <p>MPI is used to distribute data to different processes, that otherwise could not access to such data (figure below inspired by <a href="https://hpc-tutorials.llnl.gov/mpi/what_is_mpi/">LLNL</a>). </p>
-<p><img alt="distributed memory" src="../img/distributed_memory.png" /></p>
+<p><img alt="distributed memory" src="https://github.com/DeiC-HPC/EuroCC-knowledgepool/raw/b4a392a96074a4fe6bcce996a461a1b85d8b45b7/develop/img/distributed_memory.png" /></p>
 <p>MPI is considered a very hard language to learn, but this reputation is mostly due to the fact that the message passing is programmed explicitly.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Link <img alt="🔗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f517.svg" title=":link:" /></th>
+<th align="left">Link</th>
 <th align="left">Description</th>
 </tr>
 </thead>
@@ -515,9 +515,9 @@
 </table>
 <h2 id="gpu-programming">GPU programming</h2>
 <p>GPUs (graphical processing units) are computing accelerators that are used to boosts heavy linear algebra applications, such as deep learning. A GPU usually features a large number of special processing units that enable massively parallel execute of code (figure below inspired by <a href="https://astrocompute.files.wordpress.com/2011/03/gpu-computing-feature.jpg">Astronomy Computing Today</a>).</p>
-<p><img alt="gpu" src="../img/gpu.png" /></p>
+<p><img alt="gpu" src="https://github.com/DeiC-HPC/EuroCC-knowledgepool/raw/b4a392a96074a4fe6bcce996a461a1b85d8b45b7/develop/img/gpu.png" /></p>
 <p>When utilized properly GPUs can enable performance of certain programs that is unachievable using only CPUs. To achieve this performance GPUs employ an architecture that is vastly different from that of a CPU which is illustrated below (figure inspired by <a href="https://www.omnisci.com/technical-glossary/cpu-vs-gpu">omisci</a>), where ALU is an acronym for arithmetic logic unit.</p>
-<p><img alt="architechture" src="../img/architecture.png" /></p>
+<p><img alt="architechture" src="https://github.com/DeiC-HPC/EuroCC-knowledgepool/raw/b4a392a96074a4fe6bcce996a461a1b85d8b45b7/develop/img/architecture.png" /></p>
 <p>For the sake of clarity text is omitted in parts of the figure with the different parts indicated by their colour code.</p>
 <p>When writing programs that utilize GPUs the different architecture of a GPU poses a different set of challenges compared to those of writing parallel programs for CPUs. Specifically as memory on GPUs is limited compared to CPUs a different approach to memory management is required.</p>
 <p>AMD and Nvidia are the two main producers of GPUs, where the latter has dominated the market for a long time. The Danish HPCs Type 1 and 2 feature various models of Nvidia graphic cards, while Type 5 (LUMI) has the latest AMD Instinct.</p>
@@ -527,7 +527,7 @@
 <table>
 <thead>
 <tr>
-<th align="left">Link <img alt="🔗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f517.svg" title=":link:" /></th>
+<th align="left">Link</th>
 <th align="left">Description</th>
 </tr>
 </thead>
@@ -556,7 +556,7 @@
 <table>
 <thead>
 <tr>
-<th align="left">Link <img alt="🔗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f517.svg" title=":link:" /></th>
+<th align="left">Link</th>
 <th align="left">Description</th>
 </tr>
 </thead>
