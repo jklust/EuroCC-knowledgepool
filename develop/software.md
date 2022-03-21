@@ -7,11 +7,11 @@ This page contains useful links to tutorial, learning resources, benchmark and s
 `Tensorflow` is the Google's open source library used to develop, train and deploy machine learning models. Tensorflow is implemented for `python`, but now also available in `R`
 
 ??? Links
-    | Link      | Description                          |
-    | :---------- | :----------------------------------- |
-    | [Tensorflow homepage](https://www.tensorflow.org/)       | Tensorflow home page. Contains many tutorials and howtos.  |
-    | [Learning material](https://www.tensorflow.org/resources/learn-ml) | Books and courses in machine learning using tensorflow |
-    | [R guide to tensorflow](https://tensorflow.rstudio.com/) | How to install and use tensorflow in `Rstudio` |
+| Link      | Description                          |
+| :---------- | :----------------------------------- |
+| [Tensorflow homepage](https://www.tensorflow.org/)       | Tensorflow home page. Contains many tutorials and howtos.  |
+| [Learning material](https://www.tensorflow.org/resources/learn-ml) | Books and courses in machine learning using tensorflow |
+| [R guide to tensorflow](https://tensorflow.rstudio.com/) | How to install and use tensorflow in `Rstudio` |
     
 ### pyTorch     :one: :snake:
 `Pytorch` is another Machine Learning framework created mainly by Facebook.
