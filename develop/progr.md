@@ -6,9 +6,9 @@ There are different ways of writing parallelized code, while in general there is
 
 ## OpenMP (multithreading)
 
-A popular way of parallel programming is through writing sequential code and pointing at specific pieces of code that can be parallelized into threads (fork-join mechanism, see figure below from [ADMIN magazine](https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png)). A thread is an independent execution of code with its own allocated memory.
+A popular way of parallel programming is through writing sequential code and pointing at specific pieces of code that can be parallelized into threads (fork-join mechanism, see figure below inspired from [ADMIN magazine](https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png)). A thread is an independent execution of code with its own allocated memory.
 
-[![multi](./img/multithreading.png)](https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/pymp_01/172579-1-eng-US/Pymp_01_reference.png)
+![multi](./img/multithreading.png)
 
 If threads vary in execution time, when they have to be joined together to collect data, some threads might have to wait for others, leading to loss of execution time. It is up to the programmer to best balance the distribution of threads to optimize execution times when possible.
 
