@@ -39,11 +39,11 @@ MPI is considered a very hard language to learn, but this reputation is mostly d
 
 GPUs (graphical processing units) are computing accelerators that are used to boosts heavy linear algebra applications, such as deep learning. A GPU usually features a large number of special processing units that enable massively parallel execute of code (figure below inspired by [Astronomy Computing Today](https://astrocompute.files.wordpress.com/2011/03/gpu-computing-feature.jpg)).
 
-![gpu](https://github.com/DeiC-HPC/EuroCC-knowledgepool/blob/b4a392a96074a4fe6bcce996a461a1b85d8b45b7/develop/img/gpu.png)
+![gpu](https://github.com/DeiC-HPC/EuroCC-knowledgepool/raw/b4a392a96074a4fe6bcce996a461a1b85d8b45b7/develop/img/gpu.png)
 
 When utilized properly GPUs can enable performance of certain programs that is unachievable using only CPUs. To achieve this performance GPUs employ an architecture that is vastly different from that of a CPU which is illustrated below (figure inspired by [omisci](https://www.omnisci.com/technical-glossary/cpu-vs-gpu)), where ALU is an acronym for arithmetic logic unit.
 
-![architechture](https://github.com/DeiC-HPC/EuroCC-knowledgepool/blob/b4a392a96074a4fe6bcce996a461a1b85d8b45b7/develop/img/architecture.png)
+![architechture](https://github.com/DeiC-HPC/EuroCC-knowledgepool/raw/b4a392a96074a4fe6bcce996a461a1b85d8b45b7/develop/img/architecture.png)
 
 For the sake of clarity text is omitted in parts of the figure with the different parts indicated by their colour code.
 
