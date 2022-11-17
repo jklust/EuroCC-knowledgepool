@@ -17,4 +17,4 @@ Capability HPC provides a similar setup to DeiC Throughput HPC but with increase
 
 Currently Capability HPC consists of the [LUMI](https://www.lumi-supercomputer.eu/) pre-exascale computer and once they are operational also [Leonardo](https://www.cineca.it/en/hot-topics/Leonardo-announce) and [MareNostrum5](https://www.bsc.es/). These machines are a part of the EuroHPC project where the international collaboration allows the purchase of otherwise inaccessible hardware. In particular LUMI will provide an extensive GPU partition designed to suit machine learning and artificial intelligence applications.
 
-* Best practices including an interactive Slurm tutorial are available under section [Pipe-lining and submitting jobs in Slurm](https://deic-hpc.github.io/EuroCC-knowledgepool/best/#pipe-lining-and-submitting-jobs-in-slurm)
+\* Best practices including an interactive Slurm tutorial are available under section [Pipe-lining and submitting jobs in Slurm](https://deic-hpc.github.io/EuroCC-knowledgepool/best/#pipe-lining-and-submitting-jobs-in-slurm)
