@@ -21,7 +21,7 @@ Usually, a user can access to a so-called *login node*: this has few computation
 - a quantity of storage
 - an amount of total time those resources need be used
 
-When using DeiC's facility for interactive HPC, the user asks for resources directly through the dashboard once logged in. You will have the chance to exchange messages with the front office responsible for resource assignment, in case your resource demand is too low or too high. However, we suggest to contact first your  [local front office](https://www.deic.dk/Supercomputere/Front-Office) or <eurocc@listserv.deic.dk> (HPC facilitation responsible) to get help in submitting a request to obtain resources. For using non-interactive HPCs, you will need to contact the local front office and discuss the possibility of getting resources.
+When using DeiC's facility for interactive HPC, the user asks for resources directly through the dashboard once logged in. You will have the chance to exchange messages with the front office responsible for resource assignment, in case your resource demand is too low or too high. However, we suggest to contact first your  [local front office](https://www.deic.dk/en/Front-Office) or <eurocc@listserv.deic.dk> (HPC facilitation responsible) to get help in submitting a request to obtain resources. For using non-interactive HPCs, you will need to contact the local front office and discuss the possibility of getting resources.
 
 ## What can I use HPC for
 
