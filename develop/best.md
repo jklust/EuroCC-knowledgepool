@@ -112,6 +112,7 @@ In figure above, the priority assigned to a Slurm job when the requested time in
 
 | Link        | Description                          |
 | :---------- | :----------------------------------- |
+| [Interactive Slurm](http://slurmlearning.deic.dk/ )| An interactive Slurm tutorial, in which you will be guided through the process of using Slurm. |
 | [SLURM example 1](https://genome.au.dk/docs/interacting-with-the-queue/ ) and [SLURM example 2](https://researchcomputing.princeton.edu/slurm )| Some examples of how to make a Slurm script to submit a job from the danish HPC GenomeDK and from Princeton Research Computing. |
 | [Gwf, a simple python tool to create interdependent job submissions](https://gwf.app/ )       | Gwf, developed at the University of Aarhus, makes it easy to create Slurm jobs and organize them as a pipeline with dependencies, using the python language (you need python 3.5+). You get to simply create the shell scripts and the dependencies, without the complicating syntax of Slurm. The page contains also a useful guide. |
 
